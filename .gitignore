@@ -1,0 +1,17 @@
+__pycache__/
+
+/advancements/
+/data/
+/DIM-1/
+/DIM1/
+/entities/
+/generated/
+/stats/
+/poi/
+/playerdata/
+/region/
+
+/session.lock
+
+*.dat_old
+*.out.mcfunction

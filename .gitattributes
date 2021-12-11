@@ -1,0 +1,7 @@
+* text=auto
+
+*.dat binary
+
+*.mca filter=lfs diff=lfs merge=lfs -text
+*.nbt filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
