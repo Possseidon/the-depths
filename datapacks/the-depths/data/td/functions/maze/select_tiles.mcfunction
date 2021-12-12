@@ -16,6 +16,9 @@ execute at @e[tag=grid,tag=boss] positioned ~ ~ ~1 run tag @e[tag=grid,distance=
 execute at @e[tag=grid,tag=boss] positioned ~1 ~ ~1 run tag @e[tag=grid,distance=..0.1] add boss_helper
 tag @e[tag=grid,tag=boss_helper] remove default
 
+tag @e[tag=grid,tag=boss] add boss_or_helper
+tag @e[tag=grid,tag=boss_helper] add boss_or_helper
+
 tag @e[sort=random,limit=1,tag=grid,tag=default] add exit
 tag @e[tag=grid,tag=exit] remove default
 
