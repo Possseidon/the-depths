@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "Save"
+		},
+		{
+			"path": "datapacks\\the-depths",
+			"name": "Datapack"
+		},
+		{
+			"path": "generated",
+			"name": "Generated Structures"
+		}
+	]
+}
