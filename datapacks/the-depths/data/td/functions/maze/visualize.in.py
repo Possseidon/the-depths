@@ -11,7 +11,7 @@ out(f'kill @e[tag=grid_visualization]')
 
 def summon(tags, head, height):
     tag_string = ", ".join([f"tag={tag}" for tag in tags])
-    out(f'execute at @e[{tag_string}] run summon armor_stand ~0 ~{-0.4 + height} ~0 {{Tags: [grid_visualization], ArmorItems: [{{}}, {{}}, {{}}, {{id: "minecraft:{head}", Count: 1b}}], NoGravity: 1b, Invisible: 1b, Small: 1b, Marker: 1b}}')
+    out(f'execute at @e[{tag_string}] run summon armor_stand ~0 ~{round(-0.4 + height, 1)} ~0 {{Tags: [grid_visualization], ArmorItems: [{{}}, {{}}, {{}}, {{id: "minecraft:{head}", Count: 1b}}], NoGravity: 1b, Invisible: 1b, Small: 1b, Marker: 1b}}')
 
 for tag, head, height in tiles:
     summon(["grid", tag], head, height)
