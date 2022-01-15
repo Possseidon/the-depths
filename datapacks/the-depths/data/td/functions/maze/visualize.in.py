@@ -15,7 +15,5 @@ def summon(tags, head, height):
 
 for tag, head, height in tiles:
     summon(["grid", tag], head, height)
-    summon(["grid_success", tag], head, height)
 
 summon(["gate"], "white_concrete", 0)
-summon(["gate_success"], "white_concrete", 0)
