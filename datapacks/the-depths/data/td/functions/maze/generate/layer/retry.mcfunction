@@ -5,7 +5,7 @@
 # - One failed layer.
 #
 # Output:
-# - Leaaves existing layers. (grid_success/gate_success)
+# - Leaves existing layers. (grid_success/gate_success)
 # - Removes and regenerated the failed layer.
 
 kill @e[tag=gate]
