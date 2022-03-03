@@ -6,9 +6,12 @@ forceload add -192 -192 -64 -64
 # Remove spawn platform
 fill -8 -61 -8 24 -61 24 minecraft:air
 
-# Create map platform and barrier roof
-fill -192 -64 -192 -65 -64 -65 minecraft:smooth_stone
-fill -192 64 -192 -65 64 -65 minecraft:barrier
+# Encase the map area.
+fill -192 64 -192 -65 64 -65 minecraft:tinted_glass
+fill -192 -64 -193 -65 63 -193 minecraft:tinted_glass
+fill -193 -64 -192 -193 63 -65 minecraft:tinted_glass
+fill -192 -64 -64 -65 63 -64 minecraft:tinted_glass
+fill -64 -64 -192 -64 63 -65 minecraft:tinted_glass
 
 # Create spawn area
 summon marker -64 32 -64 {Tags: [init_spawn], data: {tile: {name: "td:spawn/maze_generation"}}}
