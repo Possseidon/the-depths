@@ -60,6 +60,9 @@ tag @e[tag=grid,tag=boss_or_helper] remove boss_or_helper
 # Visualize the whole maze.
 execute if data storage td:settings {visualize: 1b} run function td:maze/visualize.out
 
+execute as @e[tag=grid] at @s positioned ~0.5 ~ ~ run function td:maze/tag/mark_gate_x
+execute as @e[tag=grid] at @s positioned ~ ~ ~0.5 run function td:maze/tag/mark_gate_z
+
 # Kill big tile helpers, as they aren't necessary anymore.
 kill @e[tag=grid,tag=boss_helper]
 

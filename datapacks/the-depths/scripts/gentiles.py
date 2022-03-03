@@ -38,7 +38,7 @@ def generate_tile_level_lookup(levels: list[str]):
 
 
 def generate_tile_type_lookup(level: str, tile_types: list[str]):
-    with create_path_and_open(apply_tile_root / f"{level}.out.mcfunction") as file:
+    with create_path_and_open((apply_tile_root / f"{level}").with_suffix(".out.mcfunction")) as file:
         file.write("# AUTO-GENERATED\n")
         for tile_type in tile_types:
             file.write(f'execute as @s[tag={tile_type}] run '
@@ -46,7 +46,7 @@ def generate_tile_type_lookup(level: str, tile_types: list[str]):
 
 
 def generate_tile_lookup(level: str, tile_type: str, tiles: list[str]):
-    with create_path_and_open(apply_tile_root / level / f"{tile_type}.out.mcfunction") as file:
+    with create_path_and_open((apply_tile_root / level / f"{tile_type}").with_suffix(".out.mcfunction")) as file:
         file.write("# AUTO-GENERATED\n")
         for tile in tiles:
             file.write(
@@ -73,19 +73,18 @@ def generate_tiles():
 # Gates
 
 def generate_gate_level_lookup(levels: list[str]):
-    for axis in "x", "z":
-        with create_path_and_open((apply_gate_root / axis).with_suffix(f".out.mcfunction")) as file:
-            file.write("# AUTO-GENERATED\n")
-            for level in levels:
-                file.write(f'execute as @s[nbt={{data: {{layer_index: {level_index(level)}b}}}}] run '
-                           f'function td:map/apply_random/gate/{level}.out\n')
-            file.write(f'data modify entity @s data.gate_{axis} '
-                       'merge from entity @e[sort=random,limit=1,tag=gate_lookup] data\n')
-            file.write('kill @e[tag=gate_lookup]\n')
+    with create_path_and_open(apply_gate_root.with_suffix(".out.mcfunction")) as file:
+        file.write("# AUTO-GENERATED\n")
+        for level in levels:
+            file.write(f'execute as @s[nbt={{data: {{layer_index: {level_index(level)}b}}}}] run '
+                       f'function td:map/apply_random/gate/{level}.out\n')
+        file.write('data modify entity @s data.gate '
+                   'merge from entity @e[sort=random,limit=1,tag=gate_lookup] data\n')
+        file.write('kill @e[tag=gate_lookup]\n')
 
 
 def generate_gate_lookup(level: str, gates: list[str]):
-    with create_path_and_open(apply_gate_root / f"{level}.out.mcfunction") as file:
+    with create_path_and_open((apply_gate_root / f"{level}").with_suffix(".out.mcfunction")) as file:
         file.write("# AUTO-GENERATED\n")
         for gate in gates:
             file.write(

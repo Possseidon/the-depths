@@ -1,7 +1,7 @@
-# Applies a random transform to the z gate of the tile marker.
+# Applies a random transform to the z gate of the gate marker.
 #
-# Execute as: tag=tile_marker
+# Execute as: tag=gate_z
 
-execute as @s[tag=gate_pos_z] run function td:map/apply_random/transform/gate_z
-data modify entity @s data.gate_z.transform merge from entity @e[sort=random,limit=1,tag=transform_lookup] data
+function td:map/apply_random/transform/gate_z
+data modify entity @s data.gate.transform merge from entity @e[sort=random,limit=1,tag=transform_lookup] data
 kill @e[tag=transform_lookup]
