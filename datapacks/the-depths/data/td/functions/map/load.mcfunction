@@ -1,7 +1,4 @@
-# Generates the real dungeon map from the existing maze grid.
-
-# TODO: Remove
-execute if data storage td:settings {auto_reload: 1b} run reload
+# Loads in all tiles onto the map.
 
 # Convert grid markers into tile markers.
 execute if entity @e[tag=grid] run kill @e[tag=tile_marker]
@@ -9,6 +6,10 @@ execute as @e[tag=grid] run function td:map/convert_to_tile_marker
 execute if entity @e[tag=gate] run kill @e[tag=gate_marker]
 execute as @e[tag=gate] run function td:map/convert_to_gate_marker
 
-# Use the tile markers to generate the map, possibly across multiple ticks.
-tag @e[tag=tile_marker] add tile_marker_to_gen
-function td:map/load/schedule_next_tiles
+# Cover everything with solid blocks, so everything turns dark.
+# Wait for everything to be pitch black and then load in the new tiles.
+# Generating in the dark avoids lighting bugs that take forever to fix themselves.
+fill -192 64 -192 -65 64 -65 minecraft:tinted_glass
+# Move the top layer into the ceiling, so that the light predicate works.
+execute as @e[tag=tile_marker,nbt={data: {layer_index: 1b}}] at @s run tp ~7 ~24 ~7
+function td:map/await_darkness_and_schedule_all_tiles
