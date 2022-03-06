@@ -24,12 +24,6 @@ execute as @e[tag=init_spawn] at @s run function td:init/load_structure
 # Set world spawn (luckily gets executed early enough in single player, spawning the player here)
 setworldspawn -56 33 -56
 
-# Initialize settings
-data modify storage td:settings generation_speed set value 4b
-
-# Make sure this is only executed once
-data modify storage td:settings initialized set value 1b
-
 # Teams for the state of players.
 
 # The player is ready to play the game and will be moved into the player team when the game starts.
@@ -49,3 +43,17 @@ team modify spectator color gray
 
 # Used to detect if all players are inside a tile, which happens when the value is zero.
 scoreboard objectives add players_outside dummy
+
+bossbar add td:darkness "§9§oᴀᴡᴀɪᴛɪɴɢ ᴅᴀʀᴋɴᴇꜱꜱ..."
+bossbar set td:darkness color blue
+
+bossbar add td:generation "§e§oɢᴇɴᴇʀᴀᴛɪɴɢ..."
+bossbar set td:generation color yellow
+
+bossbar add td:boss "ᴜɴɴᴀᴍᴇᴅ ʙᴏꜱꜱ"
+
+# Initialize settings
+data modify storage td:settings generation_speed set value 2b
+
+# Make sure this is only executed once
+data modify storage td:settings initialized set value 1b

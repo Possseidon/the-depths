@@ -6,4 +6,6 @@ execute if data storage td:settings {generation_speed: 3b} as @e[limit=64,sort=r
 execute if data storage td:settings {generation_speed: 4b} as @e[tag=tile_marker_to_gen] at @s run function td:map/load/tile
 execute if entity @e[limit=1,tag=tile_marker_to_gen] run schedule function td:map/load/schedule_next_tiles 1t
 
+execute store result bossbar td:generation value if entity @e[tag=tile_marker,tag=!tile_marker_to_gen]
+
 execute unless entity @e[limit=1,tag=tile_marker_to_gen] run function td:map/load/done
