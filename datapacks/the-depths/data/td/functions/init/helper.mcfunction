@@ -20,7 +20,6 @@ summon marker -16 32 -56 {Tags: [init_spawn], data: {tile: {name: "td:spawn/tile
 summon marker -8 32 -16 {Tags: [init_spawn], data: {tile: {name: "td:spawn/tile_design/2x1"}}}
 
 execute as @e[tag=init_spawn] at @s run function td:init/load_structure
-kill @e[tag=init_spawn]
 
 # Set world spawn (luckily gets executed early enough in single player, spawning the player here)
 setworldspawn -56 33 -56
@@ -30,3 +29,23 @@ data modify storage td:settings generation_speed set value 4b
 
 # Make sure this is only executed once
 data modify storage td:settings initialized set value 1b
+
+# Teams for the state of players.
+
+# The player is ready to play the game and will be moved into the player team when the game starts.
+team add ready "Ready"
+team modify ready color yellow
+team modify ready friendlyFire false
+
+# The player is actively playing the game.
+team add player "Player"
+team modify player color green
+
+# The player is merely spectating, presumably in spectator mode.
+team add spectator "Spectator"
+team modify spectator color gray
+
+# Permanent objectives for while the game is running.
+
+# Used to detect if all players are inside a tile, which happens when the value is zero.
+scoreboard objectives add players_outside dummy
