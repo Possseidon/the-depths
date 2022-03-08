@@ -33,17 +33,14 @@ kill @e[type=!minecraft:player]
 # TODO: Remove
 execute if data storage td:settings {auto_reload: 1b} run reload
 
-# Temporary scoreboards for layer generation.
-scoreboard objectives add var dummy
-scoreboard objectives add const dummy
-
-scoreboard players set var layer_index 0
+scoreboard players set layer_index var 0
 scoreboard players set layer_count const 5
 
 function td:maze/generate/new_layer
 
-scoreboard objectives remove var
-scoreboard objectives remove const
+scoreboard players reset layer_index var
+scoreboard players reset layer_offset var
+scoreboard players reset layer_count const
 
 # Revert all success tags with the base tags.
 tag @e[tag=grid_success] add grid

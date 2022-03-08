@@ -39,7 +39,11 @@ team modify player color green
 team add spectator "Spectator"
 team modify spectator color gray
 
-# Permanent objectives for while the game is running.
+scoreboard objectives add var dummy
+scoreboard objectives add const dummy
+
+# A cooldown until a room is marked as cleared when the marked monster dies.
+scoreboard objectives add monster_cooldown dummy
 
 # Used to detect if all players are inside a tile, which happens when the value is zero.
 scoreboard objectives add players_outside dummy
