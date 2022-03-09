@@ -1,6 +1,6 @@
 # Waits for the map area to be pitch black and then starts to load in all tiles.
 
-tag @e[tag=tile_marker,nbt={data: {layer_index: 1b}}] add bright_top_layer
+tag @e[tag=tile_marker,nbt={data: {level: 1b}}] add bright_top_layer
 tag @e[tag=tile_marker,predicate=td:is_light_level/0] remove bright_top_layer
 
 execute store result bossbar td:darkness value if entity @e[tag=tile_marker,tag=bright_top_layer]

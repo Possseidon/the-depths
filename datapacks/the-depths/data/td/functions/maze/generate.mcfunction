@@ -23,7 +23,7 @@
 #     - Multiple of: transform_pos/neg_x/z_pos/neg_x/z -> x and z must be unique
 #   - data:
 #     - Pos -> The actual position on the dungeon map.
-#     - layer_index -> 1b .. 5b
+#     - level -> 1b .. 5b
 # - Gate markers.
 #   - Will be used to store structure and transform of the gate.
 # - An optional visualization of the maze.
@@ -33,12 +33,12 @@ kill @e[type=!minecraft:player]
 # TODO: Remove
 execute if data storage td:settings {auto_reload: 1b} run reload
 
-scoreboard players set layer_index var 0
+scoreboard players set level var 0
 scoreboard players set layer_count const 5
 
 function td:maze/generate/new_layer
 
-scoreboard players reset layer_index var
+scoreboard players reset level var
 scoreboard players reset layer_offset var
 scoreboard players reset layer_count const
 

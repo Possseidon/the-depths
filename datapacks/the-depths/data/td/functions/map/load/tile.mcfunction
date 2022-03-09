@@ -12,7 +12,7 @@ execute as @s[tag=wide,tag=!long] run fill ~ ~ ~ ~31 ~23 ~15 minecraft:air
 execute as @s[tag=!wide,tag=long] run fill ~ ~ ~ ~15 ~23 ~31 minecraft:air
 execute as @s[tag=wide,tag=long] run fill ~ ~ ~ ~31 ~23 ~31 minecraft:air
 
-execute as @s[nbt={data: {layer_index: 1b}}] run function td:map/load/grass_roof
+execute as @s[nbt={data: {level: 1b}}] run function td:map/load/grass_roof
 
 setblock ~ ~ ~ minecraft:structure_block{posY: 0, mode: "LOAD"}
 data modify block ~ ~ ~ {} merge from entity @s data.tile

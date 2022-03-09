@@ -7,7 +7,7 @@ bossbar set td:generation value 0
 execute store result bossbar td:generation max if entity @e[tag=tile_marker]
 
 # Reset tile markers from darkness detection.
-execute as @e[tag=tile_marker,nbt={data: {layer_index: 1b}}] at @s run tp ~-7 ~-24 ~-7
+execute as @e[tag=tile_marker,nbt={data: {level: 1b}}] at @s run tp ~-7 ~-24 ~-7
 
 # Use the tile markers to generate the map, possibly across multiple ticks.
 tag @e[tag=tile_marker] add tile_marker_to_gen

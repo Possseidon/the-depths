@@ -11,8 +11,8 @@ execute as @e[tag=gate] run function td:map/convert_to_gate_marker
 # Generating in the dark avoids lighting bugs that take forever to fix themselves.
 fill -192 64 -192 -65 64 -65 minecraft:tinted_glass
 # Move the top layer into the ceiling, so that the light predicate works.
-execute as @e[tag=tile_marker,nbt={data: {layer_index: 1b}}] at @s run tp ~7 ~24 ~7
-execute store result bossbar td:darkness max if entity @e[tag=tile_marker,nbt={data: {layer_index: 1b}}]
+execute as @e[tag=tile_marker,nbt={data: {level: 1b}}] at @s run tp ~7 ~24 ~7
+execute store result bossbar td:darkness max if entity @e[tag=tile_marker,nbt={data: {level: 1b}}]
 execute store result bossbar td:darkness value run bossbar get td:darkness max
 bossbar set td:darkness players @a
 function td:map/await_darkness_and_schedule_all_tiles

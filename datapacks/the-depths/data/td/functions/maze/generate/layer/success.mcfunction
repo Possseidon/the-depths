@@ -7,12 +7,12 @@
 #   - grid_success/gate_success -> Replaces grid/gate
 #   - previous_layer -> Used to position the spawn below the exit of the previous layer.
 # - data:
-#   - layer_index -> set to 1b .. 5b
+#   - level -> set to 1b .. 5b
 #   - Pos[1] -> set to the real y coordinate on the dungeon map
 
-execute as @e[tag=grid] store result entity @s data.layer_index byte 1 run scoreboard players get layer_index var
+execute as @e[tag=grid] store result entity @s data.level byte 1 run scoreboard players get level var
 scoreboard players set layer_offset var -24
-scoreboard players operation layer_offset var *= layer_index var
+scoreboard players operation layer_offset var *= level var
 scoreboard players add layer_offset var 64
 execute as @e[tag=grid] store result entity @s data.Pos[1] double 1 run scoreboard players get layer_offset var
 
@@ -25,4 +25,4 @@ tag @e[tag=grid,tag=grid_success] remove grid
 tag @e[tag=gate,tag=!gate_success] add gate_success
 tag @e[tag=gate,tag=gate_success] remove gate
 
-execute if score layer_index var < layer_count const run function td:maze/generate/new_layer
+execute if score level var < layer_count const run function td:maze/generate/new_layer

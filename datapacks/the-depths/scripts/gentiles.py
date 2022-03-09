@@ -30,7 +30,7 @@ def generate_tile_level_lookup(levels: list[str]):
     with create_path_and_open(apply_tile_root.with_suffix(".out.mcfunction")) as file:
         file.write("# AUTO-GENERATED\n")
         for level in levels:
-            file.write(f'execute as @s[nbt={{data: {{layer_index: {level_index(level)}b}}}}] run '
+            file.write(f'execute as @s[nbt={{data: {{level: {level_index(level)}b}}}}] run '
                        f'function td:map/apply_random/tile/{level}.out\n')
         file.write('data modify entity @s data.tile '
                    'merge from entity @e[sort=random,limit=1,tag=tile_lookup] data\n')
@@ -76,7 +76,7 @@ def generate_gate_level_lookup(levels: list[str]):
     with create_path_and_open(apply_gate_root.with_suffix(".out.mcfunction")) as file:
         file.write("# AUTO-GENERATED\n")
         for level in levels:
-            file.write(f'execute as @s[nbt={{data: {{layer_index: {level_index(level)}b}}}}] run '
+            file.write(f'execute as @s[nbt={{data: {{level: {level_index(level)}b}}}}] run '
                        f'function td:map/apply_random/gate/{level}.out\n')
         file.write('data modify entity @s data.gate '
                    'merge from entity @e[sort=random,limit=1,tag=gate_lookup] data\n')
