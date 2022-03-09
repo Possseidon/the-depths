@@ -41,6 +41,7 @@ team modify spectator color gray
 
 scoreboard objectives add var dummy
 scoreboard objectives add const dummy
+scoreboard objectives add tile_stats dummy "§eᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ"
 
 # A cooldown until a room is marked as cleared when the marked monster dies.
 scoreboard objectives add monster_cooldown dummy

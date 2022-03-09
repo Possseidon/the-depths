@@ -79,3 +79,5 @@ execute as @e[tag=grid,tag=wide,tag=!long] at @s run function td:maze/tag/gate/w
 execute as @e[tag=grid,tag=!wide,tag=long] at @s run function td:maze/tag/gate/long
 
 function td:maze/tag/transform
+
+function td:maze/update_tile_stats
