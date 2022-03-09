@@ -14,3 +14,5 @@ execute as @s[tag=!wide,tag=!long] run fill ~ ~ ~ ~14 ~23 ~14 minecraft:redstone
 execute as @s[tag=wide,tag=!long] run fill ~ ~ ~ ~30 ~23 ~14 minecraft:redstone_block replace minecraft:waxed_oxidized_cut_copper
 execute as @s[tag=!wide,tag=long] run fill ~ ~ ~ ~14 ~23 ~30 minecraft:redstone_block replace minecraft:waxed_oxidized_cut_copper
 execute as @s[tag=wide,tag=long] run fill ~ ~ ~ ~30 ~23 ~30 minecraft:redstone_block replace minecraft:waxed_oxidized_cut_copper
+
+execute as @s[tag=spawn] run function td:game/room/enter/spawn
