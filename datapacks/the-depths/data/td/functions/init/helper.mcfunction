@@ -27,21 +27,21 @@ setworldspawn -56 33 -56
 # Teams for the state of players.
 
 # The player is ready to play the game and will be moved into the player team when the game starts.
-team add ready "Ready"
+team add ready "ʀᴇᴀᴅʏ"
 team modify ready color yellow
 team modify ready friendlyFire false
 
 # The player is actively playing the game.
-team add player "Player"
+team add player "ᴘʟᴀʏᴇʀ"
 team modify player color green
 
 # The player is merely spectating, presumably in spectator mode.
-team add spectator "Spectator"
+team add spectator "ꜱᴘᴇᴄᴛᴀᴛᴏʀ"
 team modify spectator color gray
 
 scoreboard objectives add var dummy
 scoreboard objectives add const dummy
-scoreboard objectives add tile_stats dummy "§eᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ"
+scoreboard objectives add tile_stats dummy "§e- ᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ -"
 
 # A cooldown until a room is marked as cleared when the marked monster dies.
 scoreboard objectives add monster_cooldown dummy
