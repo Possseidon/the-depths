@@ -42,6 +42,9 @@ team modify spectator color gray
 scoreboard objectives add var dummy
 scoreboard objectives add const dummy
 scoreboard objectives add tile_stats dummy "§e- ᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ -"
+scoreboard objectives add settings dummy "§e- ꜱᴇᴛᴛɪɴɢꜱ -"
+scoreboard players set §9ɢᴇɴᴇʀᴀᴛɪᴏɴ-ꜱᴘᴇᴇᴅ settings 2
+scoreboard objectives setdisplay sidebar settings
 
 # A cooldown until a room is marked as cleared when the marked monster dies.
 scoreboard objectives add monster_cooldown dummy
@@ -56,9 +59,6 @@ bossbar add td:generation "§e§oɢᴇɴᴇʀᴀᴛɪɴɢ..."
 bossbar set td:generation color yellow
 
 bossbar add td:boss "ᴜɴɴᴀᴍᴇᴅ ʙᴏꜱꜱ"
-
-# Initialize settings
-data modify storage td:settings generation_speed set value 2b
 
 # Make sure this is only executed once
 data modify storage td:settings initialized set value 1b
