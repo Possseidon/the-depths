@@ -12,12 +12,12 @@ def convert_file(filename: str):
     pre, *ext = filename.rsplit(".", 2)
     assert(ext == ["in", "py"])
 
-    with open(filename) as file:
+    with open(filename, encoding="UTF-8") as file:
         code = file.read()
 
     fixed_filename = pre + ".out.mcfunction"
 
-    with open(fixed_filename, "w") as file:
+    with open(fixed_filename, "w", encoding="UTF-8") as file:
         def out(line):
             file.write(line)
             file.write("\n")

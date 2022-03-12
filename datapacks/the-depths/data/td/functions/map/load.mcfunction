@@ -1,18 +1,14 @@
-# Loads in all tiles onto the map.
-
-# Convert grid markers into tile markers.
-execute if entity @e[tag=grid] run kill @e[tag=tile_marker]
-execute as @e[tag=grid] run function td:map/convert_to_tile_marker
-execute if entity @e[tag=gate] run kill @e[tag=gate_marker]
-execute as @e[tag=gate] run function td:map/convert_to_gate_marker
+# First clears all old tiles and then loads the new tiles.
 
 # Cover everything with solid blocks, so everything turns dark.
 # Wait for everything to be pitch black and then load in the new tiles.
 # Generating in the dark avoids lighting bugs that take forever to fix themselves.
+# Already done here to allow for some lighting updates while the map is being cleared.
 fill -192 64 -192 -65 64 -65 minecraft:tinted_glass
-# Move the top layer into the ceiling, so that the light predicate works.
-execute as @e[tag=tile_marker,nbt={data: {level: 1b}}] at @s run tp ~7 ~24 ~7
-execute store result bossbar td:darkness max if entity @e[tag=tile_marker,nbt={data: {level: 1b}}]
-execute store result bossbar td:darkness value run bossbar get td:darkness max
-bossbar set td:darkness players @a
-function td:map/await_darkness_and_schedule_all_tiles
+
+# Mark all old tiles and clear them recusrively.
+tag @e[tag=tile_marker] add tile_marker_to_clear
+execute store result bossbar td:clearing max if entity @e[tag=tile_marker,tag=tile_marker_to_clear]
+execute store result bossbar td:clearing value run bossbar get td:clearing max
+bossbar set td:clearing players @a
+function td:map/clear/schedule_next_tiles

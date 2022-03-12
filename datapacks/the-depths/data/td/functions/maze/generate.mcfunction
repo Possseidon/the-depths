@@ -28,10 +28,8 @@
 #   - Will be used to store structure and transform of the gate.
 # - An optional visualization of the maze.
 
-kill @e[type=!minecraft:player]
-
 # TODO: Remove
-execute if data storage td:settings {auto_reload: 1b} run reload
+execute if data storage td:data {auto_reload: 1b} run reload
 
 scoreboard players set level var 0
 scoreboard players set layer_count const 5
@@ -55,7 +53,7 @@ tag @e[tag=grid,tag=can_big] remove can_big
 tag @e[tag=grid,tag=boss_or_helper] remove boss_or_helper
 
 # Visualize the whole maze.
-execute if data storage td:settings {visualize: 1b} run function td:maze/visualize.out
+execute if data storage td:data {visualize: 1b} run function td:maze/visualize.out
 
 execute as @e[tag=grid] at @s positioned ~0.5 ~ ~ run function td:maze/tag/mark_gate_x
 execute as @e[tag=grid] at @s positioned ~ ~ ~0.5 run function td:maze/tag/mark_gate_z
@@ -81,3 +79,8 @@ execute as @e[tag=grid,tag=!wide,tag=long] at @s run function td:maze/tag/gate/l
 function td:maze/tag/transform
 
 function td:maze/update_tile_stats
+
+scoreboard players set map_x_offset var 8
+scoreboard players operation map_x_offset var -= map_width settings
+scoreboard players set map_z_offset var 8
+scoreboard players operation map_z_offset var -= map_height settings
