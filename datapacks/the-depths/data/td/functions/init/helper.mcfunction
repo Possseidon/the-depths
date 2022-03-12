@@ -51,7 +51,7 @@ scoreboard players set max_size const 8
 scoreboard players set min_generation_speed const 0
 scoreboard players set max_generation_speed const 4
 
-scoreboard objectives add tile_stats dummy "§e- ᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ -"
+scoreboard objectives add tile_stats dummy "§e§n- ᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ -"
 
 scoreboard objectives add settings dummy
 scoreboard players set map_width settings 6
