@@ -7,8 +7,6 @@
 # - tile_marker
 #   - data.tile -> structure_block parameters for the tile
 
-execute as @s[nbt={data: {level: 1b}}] run function td:map/load/grass_roof
-
 setblock ~ ~ ~ minecraft:structure_block{posY: 0, mode: "LOAD"}
 data modify block ~ ~ ~ {} merge from entity @s data.tile
 setblock ~ ~1 ~ minecraft:redstone_block
