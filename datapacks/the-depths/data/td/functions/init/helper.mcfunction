@@ -1,9 +1,31 @@
 # Prepares the world when the map is first loaded.
 
-# Make sure the map area stays loaded without relying on spawn-chunks
+# Setup things that are saved in the level.dat.
+defaultgamemode adventure
+difficulty hard
+setworldspawn -56 33 -56
+time set 3000
+
+gamerule doFireTick false
+gamerule commandBlockOutput false
+gamerule doMobSpawning false
+gamerule disableRaids true
+gamerule doWeatherCycle false
+gamerule doDaylightCycle false
+gamerule doInsomnia false
+gamerule keepInventory true
+gamerule doLimitedCrafting true
+gamerule mobGriefing false
+gamerule randomTickSpeed 0
+gamerule spawnRadius 0
+gamerule doTraderSpawning false
+gamerule sendCommandFeedback false
+gamerule doPatrolSpawning false
+
+# Make sure the map area stays loaded without relying on spawn-chunks.
 forceload add -192 -192 -64 -64
 
-# Remove spawn platform
+# Remove spawn platform.
 fill -8 -61 -8 24 -61 24 minecraft:air
 
 # Encase the map area.
@@ -13,16 +35,13 @@ fill -193 -64 -192 -193 63 -65 minecraft:tinted_glass
 fill -192 -64 -64 -65 63 -64 minecraft:tinted_glass
 fill -64 -64 -192 -64 63 -65 minecraft:tinted_glass
 
-# Create spawn area
+# Create spawn area.
 summon marker -64 32 -64 {Tags: [init_spawn], data: {tile: {name: "td:spawn/maze_generation"}}}
 summon marker -48 32 -56 {Tags: [init_spawn], data: {tile: {name: "td:spawn/tile_design/1x1"}}}
 summon marker -16 32 -56 {Tags: [init_spawn], data: {tile: {name: "td:spawn/tile_design/2x2"}}}
 summon marker -8 32 -16 {Tags: [init_spawn], data: {tile: {name: "td:spawn/tile_design/2x1"}}}
 
 execute as @e[tag=init_spawn] at @s run function td:init/load_structure
-
-# Set world spawn (luckily gets executed early enough in single player, spawning the player here)
-setworldspawn -56 33 -56
 
 # Teams for the state of players.
 
@@ -79,6 +98,6 @@ bossbar set td:generation color yellow
 
 bossbar add td:boss "ᴜɴɴᴀᴍᴇᴅ ʙᴏꜱꜱ"
 
-# Make sure this is only executed once
+# Make sure this is only executed once.
 #declare storage td:data
 data modify storage td:data initialized set value 1b
