@@ -1,6 +1,7 @@
 # Prepares the world when the map is first loaded.
 
 # Setup things that are saved in the level.dat.
+datapack disable "vanilla"
 defaultgamemode adventure
 difficulty hard
 setworldspawn -56 33 -56
