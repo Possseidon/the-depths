@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:grass_block"
+    },
+    "title": "ᴠᴀʟʟᴇʏ",
+    "description": "- Lᴇᴠᴇʟ 1 -",
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

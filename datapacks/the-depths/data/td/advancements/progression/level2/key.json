@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level2/boss",
+  "display": {
+    "icon": {
+      "item": "minecraft:tnt"
+    },
+    "title": "ꜰɪʀᴇ ɪɴ ᴛʜᴇ ʜᴏʟᴇ",
+    "description": "ꜰᴏᴜɴᴅ ꜱᴏᴍᴇ ᴇxᴘʟᴏꜱɪᴠᴇꜱ",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

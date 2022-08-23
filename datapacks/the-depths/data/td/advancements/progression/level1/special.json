@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level1/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_nugget"
+    },
+    "title": "",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ꜱʜᴏᴘ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

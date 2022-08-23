@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level2/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": "",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ꜱʜᴏᴘ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level3/exit",
+  "display": {
+    "icon": {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    "title": "ᴅᴜɴɢᴇᴏɴ",
+    "description": " - Lᴇᴠᴇʟ 4 -",
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

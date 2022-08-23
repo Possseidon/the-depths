@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level2/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:gunpowder"
+    },
+    "title": "ɢᴏᴛ ꜱᴏᴍᴇ ᴋᴀ-ʙᴏᴏᴍ?",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ʙʟᴀꜱᴛɪɴɢ ꜱɪᴛᴇ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

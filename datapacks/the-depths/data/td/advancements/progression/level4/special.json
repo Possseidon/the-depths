@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level4/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": "ꜱʜᴜᴛ ᴜᴘ ᴀɴᴅ ᴛᴀᴋᴇ ᴍʏ ᴍᴏɴᴇʏ",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ꜱʜᴏᴘ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

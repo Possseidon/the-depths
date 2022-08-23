@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level1/exit",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": "ʟɪʙʀᴀʀʏ",
+    "description": " - Lᴇᴠᴇʟ 2 -",
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

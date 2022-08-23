@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level4/boss",
+  "display": {
+    "icon": {
+      "item": "minecraft:fire_charge"
+    },
+    "title": "ᴅᴏɴ'ᴛ ʟɪɢʜᴛ ʏᴏᴜʀꜱᴇʟꜰ ᴏɴ ꜰɪʀᴇ ɴᴏᴡ",
+    "description": "ꜰᴏᴜɴᴅ ꜱᴏᴍᴇᴛʜɪɴɢ ʜᴏᴛ",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

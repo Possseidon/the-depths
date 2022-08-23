@@ -16,3 +16,6 @@ execute as @s[tag=!wide,tag=long] run fill ~ ~ ~ ~14 ~23 ~30 minecraft:redstone_
 execute as @s[tag=wide,tag=long] run fill ~ ~ ~ ~30 ~23 ~30 minecraft:redstone_block replace minecraft:waxed_oxidized_cut_copper
 
 execute as @s[tag=spawn] run function td:game/room/enter/spawn
+execute as @s[tag=special] run function td:game/room/enter/special
+execute as @s[tag=boss] run function td:game/room/enter/boss
+execute as @s[tag=exit] run function td:game/room/enter/exit

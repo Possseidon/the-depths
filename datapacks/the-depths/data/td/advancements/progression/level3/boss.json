@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level3/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:skeleton_skull"
+    },
+    "title": "ʙᴏꜱꜱ-ᴛɪᴍᴇ",
+    "description": "ꜰᴏᴜɴᴅ ᴛʜᴇ ʙᴏꜱꜱ-ʀᴏᴏᴍ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

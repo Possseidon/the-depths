@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level4/exit",
+  "display": {
+    "icon": {
+      "item": "minecraft:crimson_nylium"
+    },
+    "title": "ʜᴇʟʟ  ",
+    "description": "- Lᴇᴠᴇʟ 5 -",
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

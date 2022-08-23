@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level5/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:amethyst_block"
+    },
+    "title": "ɢᴏᴛ ᴀ ᴄʀʏꜱᴛᴀʟ?",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ᴘᴜʀᴘʟᴇ ᴘᴇᴅᴇꜱᴛᴀʟ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

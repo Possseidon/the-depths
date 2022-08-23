@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level3/boss",
+  "display": {
+    "icon": {
+      "item": "minecraft:piston"
+    },
+    "title": "ɪ ʟɪᴋᴇ ᴛᴏ ᴍᴏᴠᴇ ɪᴛ ᴍᴏᴠᴇ ɪᴛ",
+    "description": "ꜰᴏᴜɴᴅ ꜱᴏᴍᴇ ᴘᴜꜱʜʏ ᴛʜɪɴɢ",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

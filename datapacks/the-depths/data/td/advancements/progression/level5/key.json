@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level5/boss",
+  "display": {
+    "icon": {
+      "item": "minecraft:amethyst_cluster"
+    },
+    "title": "ᴛʀᴀᴘᴅᴏᴏʀ",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ᴡᴀʏ ᴅᴏᴡɴ",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

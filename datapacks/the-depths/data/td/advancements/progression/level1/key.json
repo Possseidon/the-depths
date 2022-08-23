@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level1/boss",
+  "display": {
+    "icon": {
+      "item": "minecraft:light_weighted_pressure_plate"
+    },
+    "title": "ᴀᴡꜰᴜʟʟʏ ꜰʟᴀᴛ ꜰᴏʀ ᴀ ᴋᴇʏ",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ᴋᴇʏ",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

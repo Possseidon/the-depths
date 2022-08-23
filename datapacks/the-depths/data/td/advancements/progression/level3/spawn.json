@@ -1,0 +1,17 @@
+{
+  "parent": "td:progression/level2/exit",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ore"
+    },
+    "title": "ᴄᴀᴠᴇʀɴꜱ",
+    "description": " - Lᴇᴠᴇʟ 3 -",
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "title": "ᴛʜᴇ ᴊᴏᴜʀɴᴇʏ ʙᴇɢɪɴꜱ",
+    "description": "ꜱᴛᴀʀᴛᴇᴅ ᴀ ɴᴇᴡ ʀᴜɴ",
+    "hidden": true,
+    "background": "minecraft:textures/block/mossy_cobblestone.png"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

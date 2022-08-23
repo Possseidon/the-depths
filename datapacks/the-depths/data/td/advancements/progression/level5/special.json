@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level5/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:raw_gold_block"
+    },
+    "title": "ɪ'ʟʟ ᴛᴀᴋᴇ ʏᴏᴜʀ ᴇɴᴛɪʀᴇ ꜱᴛᴏᴄᴋ",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ꜱʜᴏᴘ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

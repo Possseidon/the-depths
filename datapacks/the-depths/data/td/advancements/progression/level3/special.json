@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level3/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:raw_gold"
+    },
+    "title": "ᴍᴏɴᴇʏ = ᴘᴏᴡᴇʀ",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ꜱʜᴏᴘ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

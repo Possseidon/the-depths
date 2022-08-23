@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level4/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:obsidian"
+    },
+    "title": "ɢᴏᴛ ꜱᴏᴍᴇ ꜰɪʀᴇ?",
+    "description": "ꜰᴏᴜɴᴅ ᴀ ᴘᴏʀᴛᴀʟ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

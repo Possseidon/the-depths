@@ -1,0 +1,16 @@
+{
+  "parent": "td:progression/level3/spawn",
+  "display": {
+    "icon": {
+      "item": "minecraft:redstone"
+    },
+    "title": "ɢᴏᴛ ꜱᴏᴍᴇ ʀᴇᴅꜱᴛᴏɴᴇ?",
+    "description": "ꜰᴏᴜɴᴅ ꜱᴏᴍᴇ ᴡᴇɪʀᴅ ᴍᴇᴄʜᴀɴɪꜱᴍ",
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
