@@ -1,0 +1,33 @@
+{
+  "parent": "td:gold/16",
+  "display": {
+      "icon": {
+          "item": "minecraft:gold_block"
+      },
+      "title": "ᴄᴏᴍᴘᴀᴄᴛ ʀᴀᴡ ɢᴏʟᴅ",
+      "description": "4 ʀᴀᴡ ɢᴏʟᴅ = 1 ɢᴏʟᴅ ʙʟᴏᴄᴋ",
+      "frame": "goal",
+      "hidden": true
+  },
+  "criteria": {
+    "has_gold_nugget": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "td:gold/16_to_64",
+      "td:gold/64_to_16"
+    ],
+    "function": "td:game/gold/grant_advancement_until/16"
+  }
+}

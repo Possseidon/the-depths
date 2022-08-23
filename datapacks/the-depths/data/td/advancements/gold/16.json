@@ -1,0 +1,33 @@
+{
+  "parent": "td:gold/4",
+  "display": {
+      "icon": {
+          "item": "minecraft:raw_gold"
+      },
+      "title": "ᴄᴏᴍᴘᴀᴄᴛ ɢᴏʟᴅ ɪɴɢᴏᴛꜱ",
+      "description": "4 ɢᴏʟᴅ ɪɴɢᴏᴛꜱ = 1 ʀᴀᴡ ɢᴏʟᴅ",
+      "frame": "goal",
+      "hidden": true
+  },
+  "criteria": {
+    "has_gold_nugget": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:raw_gold"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "td:gold/4_to_16",
+      "td:gold/16_to_4"
+    ],
+    "function": "td:game/gold/grant_advancement_until/4"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "display": {
+      "icon": {
+          "item": "minecraft:gold_ingot"
+      },
+      "title": "ᴄᴏᴍᴘᴀᴄᴛ ɢᴏʟᴅ ɴᴜɢɢᴇᴛꜱ",
+      "description": "4 ɢᴏʟᴅ ɴᴜɢɢᴇᴛꜱ = 1 ɢᴏʟᴅ ɪɴɢᴏᴛ",
+      "background": "minecraft:textures/block/nether_gold_ore.png",
+      "hidden": true
+  },
+  "criteria": {
+    "has_gold_nugget": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "td:gold/1_to_4",
+      "td:gold/4_to_1"
+    ]
+  }
+}
