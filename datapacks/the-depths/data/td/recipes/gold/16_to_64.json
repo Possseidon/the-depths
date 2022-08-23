@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shapeless",
+  "group": "gold_block",
+  "ingredients": [
+    {
+      "item": "minecraft:raw_gold"
+    },
+    {
+      "item": "minecraft:raw_gold"
+    },
+    {
+      "item": "minecraft:raw_gold"
+    },
+    {
+      "item": "minecraft:raw_gold"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_block"
+  }
+}

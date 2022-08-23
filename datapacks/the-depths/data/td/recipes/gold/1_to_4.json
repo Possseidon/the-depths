@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shapeless",
+  "group": "gold_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "item": "minecraft:gold_nugget"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gold_ingot"
+  }
+}
