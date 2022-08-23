@@ -6,6 +6,8 @@ These are just some general guidelines for building tiles. Heavy customization i
 
 - [ ] Add monsters.
 - [ ] Add secrets.
+- [ ] Dead ends can have only a single gate connected even if there are multiple.
+  - Dead ends can never be opposite to each other, so this is not a problem.
 
 ## Level 1 (Valley)
 
