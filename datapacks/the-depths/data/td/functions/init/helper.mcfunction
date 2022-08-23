@@ -62,6 +62,7 @@ team modify spectator color gray
 scoreboard objectives add var dummy
 
 scoreboard objectives add const dummy
+
 scoreboard players set normal_generation_speed const 8
 scoreboard players set fast_generation_speed const 64
 scoreboard players set hundreds_per_tick const 5
@@ -70,6 +71,12 @@ scoreboard players set min_size const 4
 scoreboard players set max_size const 8
 scoreboard players set min_generation_speed const 0
 scoreboard players set max_generation_speed const 4
+
+scoreboard players set gold_nugget_value const 1
+scoreboard players set gold_bar_value const 4
+scoreboard players set gold_chunk_value const 16
+scoreboard players set gold_block_value const 64
+scoreboard players set gold_cluster_value const 256
 
 scoreboard objectives add tile_stats dummy "§e§n- ᴛɪʟᴇ ꜱᴛᴀᴛɪꜱᴛɪᴄꜱ -"
 
@@ -98,6 +105,11 @@ bossbar add td:generation "§e§oɢᴇɴᴇʀᴀᴛɪɴɢ..."
 bossbar set td:generation color yellow
 
 bossbar add td:boss "ᴜɴɴᴀᴍᴇᴅ ʙᴏꜱꜱ"
+
+# Gold tracking.
+scoreboard objectives add gold dummy
+scoreboard objectives add debt dummy
+scoreboard objectives add item_count dummy
 
 # Make sure this is only executed once.
 #declare storage td:data
