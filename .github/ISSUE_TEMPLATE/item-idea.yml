@@ -1,0 +1,95 @@
+name: Item Idea
+description: An idea for a new item
+title: "[Item Idea]: **Name**"
+labels: ["Item Idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Appearance
+  - type: input
+    attributes:
+      label: Item
+      description: What Minecraft item should be used?
+      placeholder: minecraft:stick
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Lore
+      description: What lore should be displayed in the item's tooltip?
+      placeholder: Very sticky!
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: What should this item do?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # Obtainment
+
+        How can this item be obtained?
+  - type: checkboxes
+    attributes:
+      label: In Loot Chests
+      options:
+        - label: Level 1 (Valley)
+        - label: Level 2 (Library)
+        - label: Level 3 (Caverns)
+        - label: Level 4 (Dungeon)
+        - label: Level 5 (Hell)
+  - type: checkboxes
+    attributes:
+      label: As Pedestal Item
+      options:
+        - label: Level 1 (Valley)
+        - label: Level 2 (Library)
+        - label: Level 3 (Caverns)
+        - label: Level 4 (Dungeon)
+        - label: Level 5 (Hell)
+  - type: checkboxes
+    attributes:
+      label: As Shop Item
+      options:
+        - label: Level 1 (Valley)
+        - label: Level 2 (Library)
+        - label: Level 3 (Caverns)
+        - label: Level 4 (Dungeon)
+        - label: Level 5 (Hell)
+  - type: textarea
+    attributes:
+      label: As Monster Drop
+      placeholder: Ogre
+  - type: textarea
+    attributes:
+      label: Crafted
+      placeholder: Recipe
+  - type: textarea
+    attributes:
+      label: Other
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Interaction
+  - type: textarea
+    attributes:
+      label: Event
+      description: When is this item's effect triggered?
+      placeholder: While being held
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Effect
+      description: What does the item actually do?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Implementation Notes
+      description: How could this be implemented?
