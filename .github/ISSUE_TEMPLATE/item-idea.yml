@@ -34,14 +34,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        - In Loot Chests?
-        - As Pedestal Item?
-        - As Shop Item?
-        - On which Levels?
-        - As Monster Drop?
-        - Crafted?
-        - How rare?
+        <details>
+        <summary>Examples</summary>
+
+        - In Loot Chests
+        - As Pedestal Item
+        - As Shop Item
+        - On which Levels
+        - As Monster Drop
+        - Crafted
+        - Quantity? (useful for consumable items)
+        - Rarity?
         - ...
+        </details>
 
   - type: markdown
     attributes:
@@ -56,48 +61,46 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Some Ideas
-
         <details>
-          <summary>Events</summary>
+        <summary>Examples</summary>
 
-          - Every `<n>` seconds
-          - On enter...
-            - `<n>` rooms
-            - boss room
-            - special room
-            - next level
-          - On clear...
-            - `<n>` rooms
-            - boss
-          - On kill monster
-          - On attack monster
-          - On take damage
-          - On buy item
-          - On throw `<item>`
-          - On use `<item>`
-          - `<instant-event>` after `<n>` seconds
-          - `<instant-event>` while `<continous-event>`
-          - `<instant-event>` until `<continous-event>`
-          - ...
-        </details>
+        #### Events
 
-        <details>
-          <summary>Event Predicates</summary>
+        - Every `<n>` seconds
+        - On enter...
+          - `<n>` rooms
+          - boss room
+          - special room
+          - next level
+        - On clear...
+          - `<n>` rooms
+          - boss
+        - On kill monster
+        - On attack monster
+        - On take damage
+        - On buy item
+        - On throw `<item>`
+        - On use `<item>`
+        - `<instant-event>` after `<n>` seconds
+        - `<instant-event>` while `<continous-event>`
+        - `<instant-event>` until `<continous-event>`
+        - ...
 
-          - Carrying `<item>` in inventory
-          - Holding `<item>` in mainhand/offhand
-          - Wearing `<item>`
-          - Movement...
-            - standing still
-            - sneaking
-            - walking
-            - running
-          - Looking...
-            - down
-            - up
-          - Health inside `<range>`
-          - ...
+        #### Event Predicates
+
+        - Carrying `<item>` in inventory
+        - Holding `<item>` in mainhand/offhand
+        - Wearing `<item>`
+        - Movement...
+          - standing still
+          - sneaking
+          - walking
+          - running
+        - Looking...
+          - down
+          - up
+        - Health inside `<range>`
+        - ...
         </details>
 
   - type: textarea
@@ -109,38 +112,33 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Some Ideas
-
         <details>
-          <summary>Effects</summary>
+        <summary>Examples</summary>
 
-          - Give `<n>` `<item>` to `<target>`
-          - Clear `<item>` from inventory
-          - Give `<target>` `<potion-effect>` `<level>` for `<n>` seconds
-          - Set `<target>` on fire for `<n>` seconds
-          - Kill `<target>`
-          - Spawn `<spawnable>` at `<target>`
-          - ...
-        </details>
+        #### Effects
 
-        <details>
-          <summary>Effect Targets</summary>
+        - Give `<n>` `<item>` to `<target>`
+        - Clear `<item>` from inventory
+        - Give `<target>` `<potion-effect>` `<level>` for `<n>` seconds
+        - Set `<target>` on fire for `<n>` seconds
+        - Kill `<target>`
+        - Spawn `<spawnable>` at `<target>`
+        - ...
 
-          - Current entity
-          - `<n>` closest/random entity/player/monster/item in `<range>`
-          - ...
-        </details>
+        #### Effect Targets
 
-        <details>
-          <summary>Spawnables</summary>
+        - Current entity
+        - `<n>` closest/random entity/player/monster/item in `<range>`
+        - ...
 
-          Dummy entities that trigger other effects.
+        #### Spawnables
 
-          - Stationary
-          - Relative (`~` or `^`) to another entity
-          - Laser that moves `<n>` blocks every `<n>` seconds
-          - Orbital with radius `<n>` around `<target>`
-          - ...
+        - Monster, Item, etc...
+        - Stationary marker
+        - Relative marker (`~` or `^`) to another entity
+        - Laser that moves `<n>` blocks every `<n>` seconds
+        - Orbital with radius `<n>` around `<target>`
+        - ...
         </details>
 
   - type: textarea
