@@ -81,9 +81,6 @@ body:
         - On buy item
         - On throw `<item>`
         - On use `<item>`
-        - `<instant-event>` after `<n>` seconds
-        - `<instant-event>` while `<continous-event>`
-        - `<instant-event>` until `<continous-event>`
         - ...
 
         #### Event Predicates
