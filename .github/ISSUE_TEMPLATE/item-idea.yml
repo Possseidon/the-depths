@@ -3,10 +3,18 @@ description: An idea for a new item
 title: "[Item Idea]: **Name**"
 labels: ["Item Idea"]
 body:
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: What should this item do?
+    validations:
+      required: true
+
   - type: markdown
     attributes:
       value: |
-        # Appearance
+        ## Appearance
   - type: input
     attributes:
       label: Item
@@ -19,58 +27,25 @@ body:
       label: Lore
       description: What lore should be displayed in the item's tooltip?
       placeholder: Very sticky!
-  - type: textarea
-    id: description
-    attributes:
-      label: Short Description
-      description: What should this item do?
-    validations:
-      required: true
 
   - type: markdown
     attributes:
       value: |
-        # Obtainment
+        ## Obtainment
 
         How can this item be obtained?
-  - type: checkboxes
-    attributes:
-      label: In Loot Chests
-      options:
-        - label: Level 1 (Valley)
-        - label: Level 2 (Library)
-        - label: Level 3 (Caverns)
-        - label: Level 4 (Dungeon)
-        - label: Level 5 (Hell)
-  - type: checkboxes
-    attributes:
-      label: As Pedestal Item
-      options:
-        - label: Level 1 (Valley)
-        - label: Level 2 (Library)
-        - label: Level 3 (Caverns)
-        - label: Level 4 (Dungeon)
-        - label: Level 5 (Hell)
-  - type: checkboxes
-    attributes:
-      label: As Shop Item
-      options:
-        - label: Level 1 (Valley)
-        - label: Level 2 (Library)
-        - label: Level 3 (Caverns)
-        - label: Level 4 (Dungeon)
-        - label: Level 5 (Hell)
+
+        - In Loot Chests?
+        - As Pedestal Item?
+        - As Shop Item?
+        - On which Levels?
+        - As Monster Drop?
+        - Crafted?
+        - How rare?
+        - ...
   - type: textarea
     attributes:
-      label: As Monster Drop
-      placeholder: Ogre
-  - type: textarea
-    attributes:
-      label: Crafted
-      placeholder: Recipe
-  - type: textarea
-    attributes:
-      label: Other
+      label: Obtainment
 
   - type: markdown
     attributes:
@@ -80,7 +55,6 @@ body:
     attributes:
       label: Event
       description: When is this item's effect triggered?
-      placeholder: While being held
     validations:
       required: true
   - type: textarea
