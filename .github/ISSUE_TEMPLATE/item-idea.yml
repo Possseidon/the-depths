@@ -1,10 +1,9 @@
 name: Item Idea
 description: An idea for a new item
-title: "[Item Idea]: **Name**"
+title: "[Item Idea]: Name"
 labels: ["Item Idea"]
 body:
   - type: input
-    id: description
     attributes:
       label: Description
       description: What should this item do?
@@ -19,7 +18,8 @@ body:
     attributes:
       label: Item
       description: What Minecraft item should be used?
-      placeholder: minecraft:stick
+      placeholder: |
+        `minecraft:stick`
     validations:
       required: true
   - type: input
@@ -28,13 +28,12 @@ body:
       description: What lore should be displayed in the item's tooltip?
       placeholder: Very sticky!
 
+  - type: textarea
+    attributes:
+      label: Obtainment
   - type: markdown
     attributes:
       value: |
-        ## Obtainment
-
-        How can this item be obtained?
-
         - In Loot Chests?
         - As Pedestal Item?
         - As Shop Item?
@@ -43,9 +42,6 @@ body:
         - Crafted?
         - How rare?
         - ...
-  - type: textarea
-    attributes:
-      label: Obtainment
 
   - type: markdown
     attributes:
@@ -57,12 +53,96 @@ body:
       description: When is this item's effect triggered?
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Some Ideas
+
+        <details>
+          <summary>Events</summary>
+
+          - Every `<n>` seconds
+          - On enter...
+            - `<n>` rooms
+            - boss room
+            - special room
+            - next level
+          - On clear...
+            - `<n>` rooms
+            - boss
+          - On kill monster
+          - On attack monster
+          - On take damage
+          - On buy item
+          - On throw `<item>`
+          - On use `<item>`
+          - `<instant-event>` after `<n>` seconds
+          - `<instant-event>` while `<continous-event>`
+          - `<instant-event>` until `<continous-event>`
+          - ...
+        </details>
+
+        <details>
+          <summary>Event Predicates</summary>
+
+          - Carrying `<item>` in inventory
+          - Holding `<item>` in mainhand/offhand
+          - Wearing `<item>`
+          - Movement...
+            - standing still
+            - sneaking
+            - walking
+            - running
+          - Looking...
+            - down
+            - up
+          - Health inside `<range>`
+          - ...
+        </details>
+
   - type: textarea
     attributes:
       label: Effect
-      description: What does the item actually do?
+      description: What exactly does the item do?
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Some Ideas
+
+        <details>
+          <summary>Effects</summary>
+
+          - Give `<n>` `<item>` to `<target>`
+          - Clear `<item>` from inventory
+          - Give `<target>` `<potion-effect>` `<level>` for `<n>` seconds
+          - Set `<target>` on fire for `<n>` seconds
+          - Kill `<target>`
+          - Spawn `<spawnable>` at `<target>`
+          - ...
+        </details>
+
+        <details>
+          <summary>Effect Targets</summary>
+
+          - Current entity
+          - `<n>` closest/random entity/player/monster/item in `<range>`
+          - ...
+        </details>
+
+        <details>
+          <summary>Spawnables</summary>
+
+          Dummy entities that trigger other effects.
+
+          - Stationary
+          - Relative (`~` or `^`) to another entity
+          - Laser that moves `<n>` blocks every `<n>` seconds
+          - Orbital with radius `<n>` around `<target>`
+          - ...
+        </details>
+
   - type: textarea
     attributes:
       label: Implementation Notes
