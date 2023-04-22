@@ -1,6 +1,6 @@
 import colors
-import genfunc
-import gentiles
+import generate_func
+import generate_tiles
 import loot_tables
 
 
@@ -10,11 +10,11 @@ def print_header(header):
 
 def main():
     print_header("Converting all .in.py files:")
-    genfunc.convert_all()
+    generate_func.convert_all()
 
     print()
     print_header("Generating structure lookups:")
-    gentiles.main()
+    generate_tiles.main()
 
     print()
     print_header("Generating loot tables:")
