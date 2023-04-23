@@ -1,3 +1,5 @@
+#NoTrayIcon
+
 Suspend, on
 Capslock::Suspend,Toggle
 
