@@ -13,6 +13,7 @@ def main():
     print_header("Generating disable-vanilla datapack:")
     generate_disable_vanilla.main()
 
+    print()
     print_header("Converting all .in.py files:")
     generate_func.convert_all()
 
