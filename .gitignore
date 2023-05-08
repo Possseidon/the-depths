@@ -1,3 +1,9 @@
+.*
+!.gitignore
+!.gitattributes
+!.editorconfig
+!.pre-commit-config.yaml
+
 __pycache__/
 
 /advancements/
@@ -12,7 +18,7 @@ __pycache__/
 /region/
 
 /session.lock
+/level.dat_old
 
-*.dat_old
 *.out.mcfunction
 *.out.json

@@ -1,13 +1,13 @@
 {
   "parent": "td:gold/16",
   "display": {
-      "icon": {
-          "item": "minecraft:gold_block"
-      },
-      "title": "ᴄᴏᴍᴘᴀᴄᴛ ʀᴀᴡ ɢᴏʟᴅ",
-      "description": "4 ʀᴀᴡ ɢᴏʟᴅ = 1 ɢᴏʟᴅ ʙʟᴏᴄᴋ",
-      "frame": "goal",
-      "hidden": true
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": "ᴄᴏᴍᴘᴀᴄᴛ ʀᴀᴡ ɢᴏʟᴅ",
+    "description": "4 ʀᴀᴡ ɢᴏʟᴅ = 1 ɢᴏʟᴅ ʙʟᴏᴄᴋ",
+    "frame": "goal",
+    "hidden": true
   },
   "criteria": {
     "has_gold_nugget": {
