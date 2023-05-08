@@ -1,16 +1,40 @@
 {
-	"folders": [
-		{
-			"path": ".",
-			"name": "Save"
-		},
-		{
-			"path": "datapacks\\the-depths",
-			"name": "Datapack"
-		},
-		{
-			"path": "generated",
-			"name": "Generated Structures"
-		}
-	]
+  "folders": [
+    {
+      "path": ".",
+      "name": "Save"
+    },
+    {
+      "path": "datapacks\\the-depths",
+      "name": "Datapack"
+    },
+    {
+      "path": "generated",
+      "name": "Generated Structures"
+    }
+  ],
+  "settings": {
+    "workbench.iconTheme": "mc-dp-icons"
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "python",
+        "args": [
+          "./scripts/build.py"
+        ],
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "options": {
+          "cwd": "./datapacks/the-depths"
+        }
+      }
+    ]
+  }
 }

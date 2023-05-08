@@ -1,12 +1,12 @@
 {
   "display": {
-      "icon": {
-          "item": "minecraft:gold_ingot"
-      },
-      "title": "ᴄᴏᴍᴘᴀᴄᴛ ɢᴏʟᴅ ɴᴜɢɢᴇᴛꜱ",
-      "description": "4 ɢᴏʟᴅ ɴᴜɢɢᴇᴛꜱ = 1 ɢᴏʟᴅ ɪɴɢᴏᴛ",
-      "background": "minecraft:textures/block/nether_gold_ore.png",
-      "hidden": true
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": "ᴄᴏᴍᴘᴀᴄᴛ ɢᴏʟᴅ ɴᴜɢɢᴇᴛꜱ",
+    "description": "4 ɢᴏʟᴅ ɴᴜɢɢᴇᴛꜱ = 1 ɢᴏʟᴅ ɪɴɢᴏᴛ",
+    "background": "minecraft:textures/block/nether_gold_ore.png",
+    "hidden": true
   },
   "criteria": {
     "has_gold_nugget": {

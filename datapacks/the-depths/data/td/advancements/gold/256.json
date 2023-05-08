@@ -1,13 +1,13 @@
 {
   "parent": "td:gold/64",
   "display": {
-      "icon": {
-          "item": "minecraft:raw_gold_block"
-      },
-      "title": "ᴄᴏᴍᴘᴀᴄᴛ ɢᴏʟᴅ ʙʟᴏᴄᴋꜱ",
-      "description": "4 ɢᴏʟᴅ ʙʟᴏᴄᴋꜱ = 1 ʀᴀᴡ ɢᴏʟᴅ ʙʟᴏᴄᴋ",
-      "frame": "challenge",
-      "hidden": true
+    "icon": {
+      "item": "minecraft:raw_gold_block"
+    },
+    "title": "ᴄᴏᴍᴘᴀᴄᴛ ɢᴏʟᴅ ʙʟᴏᴄᴋꜱ",
+    "description": "4 ɢᴏʟᴅ ʙʟᴏᴄᴋꜱ = 1 ʀᴀᴡ ɢᴏʟᴅ ʙʟᴏᴄᴋ",
+    "frame": "challenge",
+    "hidden": true
   },
   "criteria": {
     "has_gold_nugget": {
