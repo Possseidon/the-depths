@@ -7,7 +7,7 @@ import os
 import requests
 
 
-MC_VERSION = "1.19.4"
+MC_VERSION = "1.20.2"
 VERSION_MANIFEST_LINK = "https://launchermeta.mojang.com/mc/game/version_manifest.json"
 DISABLE_VANILLA_PATH = Path('../disable-vanilla')
 
