@@ -1,31 +1,36 @@
+#Requires AutoHotkey v2.0
 #NoTrayIcon
+SetWorkingDir A_ScriptDir
 
-Suspend, on
-Capslock::Suspend,Toggle
+Suspend 1
 
-A::SendInput, % Chr(0x1d00)
-B::SendInput, % Chr(0x299)
-C::SendInput, % Chr(0x1d04)
-D::SendInput, % Chr(0x1d05)
-E::SendInput, % Chr(0x1d07)
-F::SendInput, % Chr(0xa730)
-G::SendInput, % Chr(0x262)
-H::SendInput, % Chr(0x29c)
-I::SendInput, % Chr(0x26a)
-J::SendInput, % Chr(0x1d0a)
-K::SendInput, % Chr(0x1d0b)
-L::SendInput, % Chr(0x29f)
-M::SendInput, % Chr(0x1d0d)
-N::SendInput, % Chr(0x274)
-O::SendInput, % Chr(0x1d0f)
-P::SendInput, % Chr(0x1d18)
-Q::SendInput, % Chr(0x1eb)
-R::SendInput, % Chr(0x280)
-S::SendInput, % Chr(0xa731)
-T::SendInput, % Chr(0x1d1b)
-U::SendInput, % Chr(0x1d1c)
-V::SendInput, % Chr(0x1d20)
-W::SendInput, % Chr(0x1d21)
-; X::SendInput, % Chr(0x78)
-Y::SendInput, % Chr(0x28f)
-Z::SendInput, % Chr(0x1d22)
+#SuspendExempt
+CapsLock::Suspend
+#SuspendExempt False
+
+A::SendText Chr(0x1D00)
+B::SendText Chr(0x0299)
+C::SendText Chr(0x1D04)
+D::SendText Chr(0x1D05)
+E::SendText Chr(0x1D07)
+F::SendText Chr(0xA730)
+G::SendText Chr(0x0262)
+H::SendText Chr(0x029C)
+I::SendText Chr(0x026A)
+J::SendText Chr(0x1D0A)
+K::SendText Chr(0x1D0B)
+L::SendText Chr(0x029F)
+M::SendText Chr(0x1D0D)
+N::SendText Chr(0x0274)
+O::SendText Chr(0x1D0F)
+P::SendText Chr(0x1D18)
+Q::SendText Chr(0x01EB)
+R::SendText Chr(0x0280)
+S::SendText Chr(0xA731)
+T::SendText Chr(0x1D1B)
+U::SendText Chr(0x1D1C)
+V::SendText Chr(0x1D20)
+W::SendText Chr(0x1D21)
+; X::SendText Chr(0x0078)
+Y::SendText Chr(0x028F)
+Z::SendText Chr(0x1D22)
