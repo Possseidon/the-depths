@@ -24,6 +24,8 @@
 
 - Kill boss to get fire charge.
 - Use fire charge to activate fake nether portal.
+  - Use a proper nether portal with fake teleportation.
+  - Make sure you can't actually teleport to the nether using the portal-delay gamerule.
 
 ## Level 5 (Hell)
 

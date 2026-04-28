@@ -94,6 +94,20 @@ scoreboard objectives add monster_cooldown dummy
 # Used to detect if all players are inside a tile, which happens when the value is zero.
 scoreboard objectives add players_outside dummy
 
+# The four parts of an entities UUID.
+scoreboard objectives add uuid0 dummy
+scoreboard objectives add uuid1 dummy
+scoreboard objectives add uuid2 dummy
+scoreboard objectives add uuid3 dummy
+
+# For entities that track another entity using a UUID.
+scoreboard objectives add linked_uuid0 dummy
+scoreboard objectives add linked_uuid1 dummy
+scoreboard objectives add linked_uuid2 dummy
+scoreboard objectives add linked_uuid3 dummy
+
+scoreboard objectives add recorded_movement dummy
+
 bossbar add td:clearing "§c§oᴄʟᴇᴀʀɪɴɢ ᴏʟᴅ ᴍᴀᴘ..."
 bossbar set td:clearing color red
 

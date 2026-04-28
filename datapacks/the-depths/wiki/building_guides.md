@@ -4,8 +4,9 @@ These are just some general guidelines for building tiles. Heavy customization i
 
 ## General
 
-- [ ] Add monsters.
-- [ ] Add secrets.
+- [ ] Optionally add monsters.
+- [ ] Optionally add some other challenge, like a required platforming section.
+- [ ] Optionally add some secrets that aren't required for clearing the room.
 - [ ] Dead ends can have only a single gate connected even if there are multiple.
   - Dead ends can never be opposite to each other, so this is not a problem.
 
@@ -15,6 +16,7 @@ These are just some general guidelines for building tiles. Heavy customization i
 - [ ] Andesite inside walls.
 - [ ] Tuff/ore patches.
 - [ ] Tall grass from bonemeal.
+- [ ] Optionally have some red/brown mushroom areas.
 
 ## Level 2 (Library)
 
@@ -31,6 +33,7 @@ These are just some general guidelines for building tiles. Heavy customization i
 - [ ] Bookshelves.
 - [ ] Cobwebs.
 - [ ] Lighting.
+- [ ] Optionally have some sandy areas.
 
 ## Level 3 (Caverns)
 
@@ -43,6 +46,7 @@ These are just some general guidelines for building tiles. Heavy customization i
   - [ ] Patches of deepslate ore.
 - [ ] Stone stairs and slabs to be organic.
 - [ ] Lighting.
+- [ ] Optionally have some wooden mineshaft elements.
 
 ### Tips to be efficient
 
@@ -54,8 +58,13 @@ These are just some general guidelines for building tiles. Heavy customization i
 
 ## Level 4 (Dungeon)
 
+- [ ] Optionally have some icy cold areas.
+
 TODO
 
 ## Level 5 (Hell)
+
+- [ ] Lava pools should be fairly common.
+- [ ] Optionally have some nether fortress areas.
 
 TODO

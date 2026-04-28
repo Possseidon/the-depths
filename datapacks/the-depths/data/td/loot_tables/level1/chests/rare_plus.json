@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "td:level1/chests/rare",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "td:level1/chests/epic",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
